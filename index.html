@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Order</title>
 </head>
 <body>
@@ -43,6 +42,29 @@
 
 <button id="back" class="button" onclick="Back()">Back</button>
 <button id="next" class="button" onclick="Next()">Next</button>
+
+<style>
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 6px;
+    background-color: #d66e3c;
+    transition: all 0.2 ease;
+    border: none;
+}
+
+.button:active {
+    transform: scale(0.96);
+}
+
+</style>
 
 <script src="script.js"></script>
 </body>
