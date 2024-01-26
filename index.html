@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Order</title>
+</head>
+<body>
+<div id="questions">
+    <label for="">What building is your order being delivered to</label> <br>
+    House <input type="radio" name="building" id="house_radio" onclick="House()"> <!--Entrance, Number on door --> <br>
+    Apartment <input type="radio" name="building" id="apartment_radio" onclick="Apartment()"> <!--Entrance, Number on door, Doorbell --> <br>
+    Office <input type="radio" name="building" id="office_radio" onclick="Office()"> <!--Entrance, To reception/office --> <br>
+
+
+    <p id="house" style="display:none">house</p>
+    <input id="house2" style="display:none" type="text" placeholder="Entrance">
+    doorbell/intercom
+    number
+
+
+    <p id="apartment"></p>
+    <input id="apartment2" style="display:none" type="text" placeholder="Entrance">
+    floor
+    apartment
+
+
+
+    <p id="office" style="display:none">office</p>
+    floor
+
+
+
+    <p id="courier" >Additional information to courier</p> <br>
+    <input id="courier2"  type="text" placeholder="Type information here">
+
+    Delivery adress
+    
+    <button id="geolocation" class="button" onclick="abc()">Allow location</button>
+    
+</div>
+
+<button id="back" class="button" onclick="Back()">Back</button>
+<button id="next" class="button" onclick="Next()">Next</button>
+
+<script src="script.js"></script>
+</body>
+</html>
